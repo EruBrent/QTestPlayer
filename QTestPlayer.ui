@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>QTestPlayer2Class</class>
- <widget class="QMainWindow" name="QTestPlayer2Class">
+ <class>QTestPlayerClass</class>
+ <widget class="QMainWindow" name="QTestPlayerClass">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>QTestPlayer2</string>
+   <string>QTestPlayer</string>
   </property>
   <widget class="QWidget" name="centralWidget"/>
   <widget class="QMenuBar" name="menuBar">
@@ -23,13 +23,13 @@
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuMedia">
+   <widget class="QMenu" name="menu_M">
     <property name="title">
-     <string>Media</string>
+     <string>媒体(M)</string>
     </property>
     <addaction name="openFile"/>
    </widget>
-   <addaction name="menuMedia"/>
+   <addaction name="menu_M"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -41,11 +41,11 @@
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
   <action name="openFile">
-   <property name="text">
-    <string>Open</string>
+   <property name="checkable">
+    <bool>true</bool>
    </property>
-   <property name="toolTip">
-    <string>Open media file</string>
+   <property name="text">
+    <string>打开文件</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
@@ -54,7 +54,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="QTestPlayer2.qrc"/>
+  <include location="QTestPlayer.qrc"/>
  </resources>
  <connections/>
 </ui>
